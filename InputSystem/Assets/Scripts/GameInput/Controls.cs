@@ -1,4 +1,4 @@
-// GENERATED AUTOMATICALLY FROM 'Assets/Controls.inputactions'
+// GENERATED AUTOMATICALLY FROM 'Assets/Scripts/GameInput/Controls.inputactions'
 
 using System;
 using System.Collections;
@@ -187,18 +187,6 @@ public class Controls : IInputActionCollection
                     ""modifiers"": """"
                 },
                 {
-                    ""name"": """",
-                    ""id"": ""f3378019-a30c-4bd5-bfd7-fd907463c33e"",
-                    ""path"": ""<Touchscreen>/touch/delta"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Mobile"",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false,
-                    ""modifiers"": """"
-                },
-                {
                     ""name"": ""QE"",
                     ""id"": ""29d4d0d2-6d76-4106-8fe1-d99d480f82fc"",
                     ""path"": ""1DAxis"",
@@ -296,11 +284,11 @@ public class Controls : IInputActionCollection
                 },
                 {
                     ""name"": """",
-                    ""id"": ""722ec6b2-a2ac-4af4-a190-b3a7614b2728"",
-                    ""path"": ""<Touchscreen>/button"",
-                    ""interactions"": ""MultiTap"",
+                    ""id"": ""316e890b-9d43-4d37-a6f2-6270cb2612a2"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": "";Mobile"",
+                    ""groups"": "";KeyboardMouse"",
                     ""action"": ""Shoot"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false,
@@ -334,18 +322,6 @@ public class Controls : IInputActionCollection
             ""devices"": [
                 {
                     ""devicePath"": ""<Gamepad>"",
-                    ""isOptional"": false,
-                    ""isOR"": false
-                }
-            ]
-        },
-        {
-            ""name"": ""Mobile"",
-            ""basedOn"": """",
-            ""bindingGroup"": ""Mobile"",
-            ""devices"": [
-                {
-                    ""devicePath"": ""<Touchscreen>"",
                     ""isOptional"": false,
                     ""isOR"": false
                 }
@@ -478,15 +454,6 @@ public class Controls : IInputActionCollection
         {
             if (m_GamepadSchemeIndex == -1) m_GamepadSchemeIndex = asset.GetControlSchemeIndex("Gamepad");
             return asset.controlSchemes[m_GamepadSchemeIndex];
-        }
-    }
-    private int m_MobileSchemeIndex = -1;
-    public InputControlScheme MobileScheme
-    {
-        get
-        {
-            if (m_MobileSchemeIndex == -1) m_MobileSchemeIndex = asset.GetControlSchemeIndex("Mobile");
-            return asset.controlSchemes[m_MobileSchemeIndex];
         }
     }
     public interface IMainActions
